@@ -14,7 +14,7 @@ class TTeacher extends Model
 
 	public function TAssistance()
 	{
-		return $this->hasMany('App\Models\TAssistance', 'idTeacher');
+		return $this->hasMany('App\Models\TAssistance', 'idTeacher', 'idTeacher');
 	}
 }
 ?>

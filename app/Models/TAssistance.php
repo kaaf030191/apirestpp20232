@@ -12,9 +12,9 @@ class TAssistance extends Model
 	public $incrementing=false;
 	public $timestamps=false;
 
-    public function TTeacher()
+	public function TTeacher()
 	{
-		return $this->belongsTo('App\Models\TTeacher', 'idTeacher');
+		return $this->belongsTo('App\Models\TTeacher', 'idTeacher', 'idTeacher');
 	}
 }
 ?>

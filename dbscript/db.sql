@@ -25,3 +25,6 @@ insert into tteacher values('5ece4797eaf5e', 'Kevin Arnold', 'Arias Figueroa');
 insert into tassistance values('5ece4797eaf5l', '5ece4797eaf5e', now(), null, 'En clase');
 insert into tassistance values('5ece4797eaf5x', '5ece4797eaf5e', '2023-12-20 08:25:00', null, 'En clase');
 insert into tassistance values('5ece4797eaf5y', '5ece4797eaf5e', '2024-02-27 08:00:00', null, 'En clase');
+
+insert into tteacher values('5ece4797eaf5i', 'Karla', 'Gonzales Sarmiento');
+insert into tassistance values('5ece4797eaf5p', '5ece4797eaf5i', now(), null, 'En clase');

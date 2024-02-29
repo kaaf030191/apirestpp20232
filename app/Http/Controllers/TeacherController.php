@@ -9,7 +9,7 @@ class TeacherController extends Controller
 	{
 		$listTTeacher = TTeacher::with(['tassistance' => function($q1)
 		{
-			$q1->whereRaw('mid(beginDate, 1, 10)=?', [date('Y-m-d')]);
+			$q1->whereRaw('beginDate<=? and endDate>=?', [date('Y-m-d H:i:s'), date('Y-m-d H:i:s')])->orderBy('endDate', 'desc');
 		}])->get();
 
 		$data = new \stdClass();
